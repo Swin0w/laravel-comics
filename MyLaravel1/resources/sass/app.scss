@@ -2,9 +2,54 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  body {
-    background-color: #000;
-    color: white;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.flexi {
+  display: flex;
+}
+header {
+  font-family: 'Mukta', sans-serif;
+  #min-header {
+    background-color: #007bff;
+    width: 100%;
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+    nav ul li {
+      display: inline-block;
+      font-size: 10pt;
+      color: white;
+    }
+    nav ul li:first-child{
+      padding-right: 20px;
+    }
+  }
+  #max-header {
+    width: 100%;
+    background-color: white;
+    .flexi {
+      justify-content: space-between;
+      nav ul li {
+        display: inline-block;
+        color: white;
+        padding-right: 20px;
+        a {
+          text-decoration: none;
+          color: #555759;
+          font-weight: bolder;
+        }
+      }
+      #search {
+        .fa-search {
+          padding-left: 10px;
+          color: #007bff;
+        }
+      }
+    }
   }
 }

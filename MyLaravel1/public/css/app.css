@@ -4,8 +4,63 @@
   box-sizing: border-box;
 }
 
-* body {
-  background-color: #000;
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flexi {
+  display: flex;
+}
+
+header {
+  font-family: "Mukta", sans-serif;
+}
+
+header #min-header {
+  background-color: #007bff;
+  width: 100%;
+}
+
+header #min-header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header #min-header nav ul li {
+  display: inline-block;
+  font-size: 10pt;
   color: white;
+}
+
+header #min-header nav ul li:first-child {
+  padding-right: 20px;
+}
+
+header #max-header {
+  width: 100%;
+  background-color: white;
+}
+
+header #max-header .flexi {
+  justify-content: space-between;
+}
+
+header #max-header .flexi nav ul li {
+  display: inline-block;
+  color: white;
+  padding-right: 20px;
+}
+
+header #max-header .flexi nav ul li a {
+  text-decoration: none;
+  color: #555759;
+  font-weight: bolder;
+}
+
+header #max-header .flexi #search .fa-search {
+  padding-left: 10px;
+  color: #007bff;
 }
 
