@@ -44,7 +44,7 @@ header #max-header {
 }
 
 header #max-header .flexi {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 header #max-header .flexi nav ul li {
@@ -62,5 +62,33 @@ header #max-header .flexi nav ul li a {
 header #max-header .flexi #search .fa-search {
   padding-left: 10px;
   color: #007bff;
+}
+
+.jumbotron {
+  background-image: url("/storage/jumbotron.jpg");
+  height: 40vh;
+}
+
+#list ul {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+#list ul li {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  width: 13%;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#list ul li .cards {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
 }
 

@@ -220,6 +220,7 @@ class TestController extends Controller
             ],
         ],
     ];
-    return view('pages.home', compact('comics'));
+    $user = 'Simone';
+    return view('pages.home', compact('comics', 'user'));
   }
 }
