@@ -92,24 +92,28 @@ header #max-header .flexi #search .fa-search {
   margin-bottom: 10px;
 }
 
-#desc-poster {
-  display: flex;
-  justify-content: space-around;
-  margin: 50px 0;
+main {
+  background-color: #2b2b2b;
 }
 
-#desc-poster #desc {
+main #desc-poster {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+main #desc-poster #desc {
   width: 60%;
   margin: 0 auto;
   padding: 0 100px;
 }
 
-#desc-poster #desc > p {
-  color: #555759;
+main #desc-poster #desc > p {
+  color: #fff;
   font-size: 18pt;
 }
 
-#desc-poster #desc #prezzo {
+main #desc-poster #desc #prezzo {
   background-color: #007bff;
   text-align: center;
   vertical-align: middle;
@@ -120,7 +124,12 @@ header #max-header .flexi #search .fa-search {
   margin-top: 40px;
 }
 
-#desc-poster #poster img {
+main #desc-poster #desc #prezzo > p {
+  color: #fff;
+  font-size: 14pt;
+}
+
+main #desc-poster #poster img {
   width: 400px;
   height: 550px;
 }
