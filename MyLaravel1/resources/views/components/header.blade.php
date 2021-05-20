@@ -18,7 +18,7 @@
     <div class="container">
       <div class="flexi">
         <div id="logo">
-          <img src="#none" alt="">
+          <img src="{{ asset('/storage/app/public/dc_logo.png') }}" alt="">
         </div>
         <nav>
           <ul>

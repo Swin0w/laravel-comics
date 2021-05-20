@@ -6,8 +6,10 @@
   <ul>
     @foreach ($comics as $elem)
       <li>
-        <div  class="cards" style="background-image: url({{ $elem['thumb']}}"></div>
-        {{ $elem['title']}}
+        <a href="{{ route('elem', $loop->index) }}">
+          <div  class="cards" style="background-image: url({{ $elem['thumb']}}"></div>
+          {{ $elem['title']}}
+        </a>
       </li>
     @endforeach 
   </ul>

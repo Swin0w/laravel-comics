@@ -20,4 +20,7 @@ use Illuminate\Support\Facades\Route;
 // {
 //   return view('pages.home');
 // });
-  Route::get('/', 'TestController@home');
+  Route::get('/', 'TestController@home')
+        -> name('home');
+  Route::get('/elem/{index}', 'TestController@element')
+        -> name('elem');
